@@ -16,3 +16,11 @@ in real world javascript tasks.
 
 Rather than hard coding the numbers in, I added a rules array as an argument,
 which makes the code more modular and extensible.
+
+2.
+
+An old-fashioned for loop is the most performant and readable way to populate
+a fibonnaci series, with functional filter and reduce calls to sum all the even
+results.
+
+
