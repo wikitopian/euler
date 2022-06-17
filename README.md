@@ -5,3 +5,11 @@ solving the first hundred Euler Project problems.
 
 My solutions are intended to be concise but not terse, passing a standard
 eslint/prettier check.
+
+1.
+
+I used a procedural for loop in the inner iteration instead of a functional-style
+array iteration because the body of the loop contained side effects.
+Refactoring it to be entirely functional would have sacrificed readability in
+favor of cleverness and performance, neither of which are typically the priorities
+in real world javascript tasks.
