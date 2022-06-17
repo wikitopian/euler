@@ -13,3 +13,6 @@ array iteration because the body of the loop contained side effects.
 Refactoring it to be entirely functional would have sacrificed readability in
 favor of cleverness and performance, neither of which are typically the priorities
 in real world javascript tasks.
+
+Rather than hard coding the numbers in, I added a rules array as an argument,
+which makes the code more modular and extensible.
