@@ -39,3 +39,9 @@ I generated a brute force solution that arrived at the correct answer, but it wa
 prohibitively slow. I figured out how to use node's native performance profiling
 tools to identify the bottlenecks and refactored the code so that it runs much
 faster while remaining concise and readable.
+
+5.
+
+I work my way down from the worst case scenario, doing my best to separate
+concerns with performance in mind.
+
