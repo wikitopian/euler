@@ -3,8 +3,8 @@
 This is an attempt to test and showcase my javascript development skills by
 solving the first hundred Euler Project problems.
 
-My solutions are intended to be concise but not terse, passing a standard
-eslint/prettier check.
+My solutions are intended to be concise but not terse, balancing readability
+and performance with well-written ES6 code.
 
 1.
 
@@ -23,4 +23,12 @@ An old-fashioned for loop is the most performant and readable way to populate
 a fibonnaci series, with functional filter and reduce calls to sum all the even
 results.
 
+3.
 
+While I was able to brute force a solution, it was not performant. I found and
+adapted a performant solution. It contains two distinct functions, as finding
+all of the prime numbers could be beneficial beyond the scope of the task. As an
+aside, I am not a mathematician and while I don't consider it done unless and
+until I understand the math, my goal with these exercises is to practice my
+ability to deliver clean solutions to problems. Besides, being able to find and
+adapt the hard work of others is a core competency!
