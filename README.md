@@ -32,3 +32,10 @@ aside, I am not a mathematician and while I don't consider it done unless and
 until I understand the math, my goal with these exercises is to practice my
 ability to deliver clean solutions to problems. Besides, being able to find and
 adapt the hard work of others is a core competency!
+
+4.
+
+I generated a brute force solution that arrived at the correct answer, but it was
+prohibitively slow. I figured out how to use node's native performance profiling
+tools to identify the bottlenecks and refactored the code so that it runs much
+faster while remaining concise and readable.
