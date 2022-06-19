@@ -1,3 +1,5 @@
+<img alt="Euler Project" align="right" src="https://projecteuler.net/profile/possumtech.png" />
+
 # 100 Project Euler Solutions
 
 This is an attempt to test and showcase my javascript development skills by
@@ -8,11 +10,11 @@ and performance with well-written ES6 code.
 
 1.
 
-I used a procedural for loop in the inner iteration instead of a functional-style
-array iteration because the body of the loop contained side effects.
-Refactoring it to be entirely functional would have sacrificed readability in
-favor of cleverness and performance, neither of which are typically the priorities
-in real world javascript tasks.
+I used a procedural for loop in the inner iteration instead of a
+functional-style array iteration because the body of the loop contained
+side effects. Refactoring it to be entirely functional would have sacrificed
+readability in favor of cleverness and performance, neither of which are
+typically the priorities in real world javascript tasks.
 
 Rather than hard coding the numbers in, I added a rules array as an argument,
 which makes the code more modular and extensible.
@@ -35,10 +37,10 @@ adapt the hard work of others is a core competency!
 
 4.
 
-I generated a brute force solution that arrived at the correct answer, but it was
-prohibitively slow. I figured out how to use node's native performance profiling
-tools to identify the bottlenecks and refactored the code so that it runs much
-faster while remaining concise and readable.
+I generated a brute force solution that arrived at the correct answer, but it
+was prohibitively slow. I figured out how to use node's native performance
+profiling tools to identify the bottlenecks and refactored the code so that it
+runs much faster while remaining concise and readable.
 
 5.
 
@@ -61,7 +63,8 @@ reasons.
 8.
 
 I had misread the challenge, thinking that I need to find the 13th highest
-four digit combination. After failing the challenge, re-reading it, and identifying the error, I was relieved that I'm in the habit of not hardcoding the
-arguments like the others in the forum are doing. I changed the chunkSize
+four digit combination. After failing the challenge, re-reading it, and
+identifying the error, I was relieved that I'm in the habit of not hardcoding
+the arguments like the others in the forum are doing. I changed the chunkSize
 parameter from 4 to 13, grabbed the first rather than 13th result, and was
 good to go.

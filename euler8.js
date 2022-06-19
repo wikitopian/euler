@@ -44,7 +44,7 @@ const getAdjacentChunks = (digits = [], chunkSize = 4) =>
     })
     .slice(0, digits.length + 1 - chunkSize);
 
-const getAdjacentChunkProducts = (chunks = []) =>
+const getChunkProducts = (chunks = []) =>
   chunks.map((chunk) => chunk.reduce((product, n) => product * n, 1));
 
 const getAdjacentProductsRanked = (
@@ -56,7 +56,7 @@ const getAdjacentProductsRanked = (
 
   const adjacentChunks = getAdjacentChunks(digits, chunkSize) || [];
 
-  const adjacentChunkProducts = getAdjacentChunkProducts(adjacentChunks);
+  const adjacentChunkProducts = getChunkProducts(adjacentChunks);
 
   return adjacentChunkProducts
     .sort((a, b) => a - b)
