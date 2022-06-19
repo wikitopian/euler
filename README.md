@@ -1,4 +1,4 @@
-<img alt="Euler Project" align="right" src="https://projecteuler.net/profile/possumtech.png" />
+<img alt="Euler Project" align="center" src="https://projecteuler.net/profile/possumtech.png" />
 
 # 100 Project Euler Solutions
 
