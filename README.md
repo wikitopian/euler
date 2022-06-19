@@ -57,3 +57,11 @@ have two functions. Two optimizations are introduced, using the array of
 previously confirmed primes to test against the next candidate and not bothering
 to test against primes higher than the square root of the number for fancy math
 reasons.
+
+8.
+
+I had misread the challenge, thinking that I need to find the 13th highest
+four digit combination. After failing the challenge, re-reading it, and identifying the error, I was relieved that I'm in the habit of not hardcoding the
+arguments like the others in the forum are doing. I changed the chunkSize
+parameter from 4 to 13, grabbed the first rather than 13th result, and was
+good to go.
