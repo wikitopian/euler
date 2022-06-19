@@ -9,8 +9,8 @@
 // one hundred natural numbers and the square of the sum.
 
 function getSumOfSquareDifference(naturalNums = 100) {
-  if (naturalNums <= 1) throw new RangeError("must be greater than one");
   if (!Number.isInteger(naturalNums)) throw new RangeError("must be integer");
+  if (naturalNums <= 1) throw new RangeError("must be greater than one");
 
   const numbers = [...Array(naturalNums).keys()].map((n) => n + 1);
 

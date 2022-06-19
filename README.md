@@ -45,3 +45,15 @@ faster while remaining concise and readable.
 I work my way down from the worst case scenario, doing my best to separate
 concerns with performance in mind.
 
+6.
+
+Solved it procedurally and then quickly refactored with arrow functions,
+eliminated repetition, and added appropriate guard clauses.
+
+7.
+
+We do two things (find the nth prime and find out if numbers are prime), so we
+have two functions. Two optimizations are introduced, using the array of
+previously confirmed primes to test against the next candidate and not bothering
+to test against primes higher than the square root of the number for fancy math
+reasons.
