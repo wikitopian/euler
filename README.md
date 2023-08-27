@@ -4,13 +4,13 @@ An aging PHP developer struggling to keep up with modern web development.
 
 ## Leetcode
 
-<img alt="Leetcode" align="right" src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fbadge.xyli.tech/%2Fapi%2Fusers%2Fpossumtech&logo=leetcode&logoColor=yellow" />
+<a href="https://leetcode.com/possumtech/"><img alt="Leetcode" align="right" src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solved&url=https%3A%2F%2Fbadge.xyli.tech/%2Fapi%2Fusers%2Fpossumtech&logo=leetcode&logoColor=yellow" /></a>
 
 - [ ] 30 Days of Javascript
 
 ## 100 Project Euler Solutions
 
-<img alt="Euler Project" align="right" src="https://projecteuler.net/profile/possumtech.png" />
+<a href="https://projecteuler.net/progress=possumtech"><img alt="Euler Project" align="right" src="https://projecteuler.net/profile/possumtech.png" /></a>
 
 This is an attempt to test and showcase my javascript development skills by
 solving the first hundred Euler Project problems.
