@@ -3,46 +3,23 @@
  * @return {Promise<any>}
  */
 
-const promiseAll = async (fns = []) => new Promise((resolve) => {
-  const start = performance.now();
-  const resolved = [];
-  const rejected = [];
+const promiseAll = async function (fns) {
+  return new Promise((resolve, reject, results = []) => {
+    fns.map((fn, i) => {
+      fn().then((result) => {
+        results[i] = result;
 
-  fns.forEach((fn) => {
-    fn().then((a) => {
-      resolved.push(a);
-    })
-    .catch((e) => {
-      rejected.push(e);
-    });  
+        if (Object.keys(results).length === fns.length) resolve(results);
+      })
+        .catch(reject);
+    });
   });
+}
 
-  resolved.push(5);
+const promise = promiseAll([
+  () => new Promise(resolve => setTimeout(() => resolve(4), 50)),
+  () => new Promise(resolve => setTimeout(() => resolve(10), 150)),
+  () => new Promise(resolve => setTimeout(() => resolve(16), 100)),
+]);
 
-  resolve({t: performance.now() - start, resolved, rejected})
-});
-
-
-
-const ps = [
-  () => new Promise(resolve => setTimeout(() => resolve(5), 200))
-];
-
-/*
-const ps = [
-    () => new Promise(resolve => setTimeout(() => resolve(1), 200)),
-    () => new Promise((resolve, reject) => setTimeout(() => reject("Error"), 100))
-];
-*/
-
-/*
-const ps = [
-    () => new Promise(resolve => setTimeout(() => resolve(4), 50)),
-    () => new Promise(resolve => setTimeout(() => resolve(10), 150)),
-    () => new Promise(resolve => setTimeout(() => resolve(16), 100))
-];
-*/
-
-
-const p1 = promiseAll(ps);
-p1.then(console.log);
+promise.then(console.log); // [42]
